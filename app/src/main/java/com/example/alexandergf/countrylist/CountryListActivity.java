@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CountryListActivity extends AppCompatActivity {
@@ -19,15 +20,8 @@ public class CountryListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_country_list);
 
-        countries = new ArrayList<>();
-        countries.add("Portugal");
-        countries.add("Spain");
-        countries.add("France");
-        countries.add("England");
-        countries.add("Belgium");
-        for (int i=0; i<200;i++) {
-            countries.add("Country " + i);
-        }
+        String[] countries_array = getResources().getStringArray(R.array.countries);
+        countries = Arrays.asList(countries_array);
 
         country_list_view = findViewById(R.id.country_list_view);
         country_list_view.setLayoutManager(new LinearLayoutManager(this));
