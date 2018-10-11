@@ -7,7 +7,7 @@
     tools:context=".JustCountryActivity">
 
     <TextView
-        android:id="@+id/countryView"
+        android:id="@+id/country_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -27,6 +27,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/choose"
-        app:layout_constraintBaseline_toBaselineOf="@+id/countryView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/country_view"
         app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>
